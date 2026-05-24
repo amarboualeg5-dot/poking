@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🧭 PokéFi"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_accent"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi Monster Catcher"
+        android:textSize="14sp"
+        android:textColor="@color/text_dim"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="🔍 Scan for Monsters"
+        android:textSize="18sp"
+        android:backgroundTint="@color/red_poke"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

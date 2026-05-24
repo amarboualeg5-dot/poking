@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_dark"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/captureEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="96sp"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/captureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_light"
+        android:gravity="center"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/captureDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/yellow_accent"
+        android:gravity="center"
+        android:paddingBottom="48dp" />
+
+    <!-- Pokéball (text-art stand-in, works offline, no images needed) -->
+    <TextView
+        android:id="@+id/pokeballView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="⚾"
+        android:textSize="72sp"
+        android:gravity="center"
+        android:paddingBottom="32dp" />
+
+    <Button
+        android:id="@+id/throwButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="⚾ Throw Pokéball!"
+        android:textSize="20sp"
+        android:backgroundTint="@color/red_poke"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/gotchaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉 Gotcha!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_accent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Added to your collection!"
+        android:textSize="14sp"
+        android:textColor="@color/text_dim"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="← Back to list"
+        android:textSize="16sp"
+        android:backgroundTint="@color/bg_card"
+        android:textColor="@color/text_dim" />
+
+</LinearLayout>
